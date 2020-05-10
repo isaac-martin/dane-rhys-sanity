@@ -6,6 +6,9 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // document schemas
 import project from './documents/project';
+import videoProject from './documents/videoProject';
+import page from './documents/page';
+
 import customLink from './documents/customLink';
 import siteSettings from './documents/siteSettings';
 import menu from './documents/menu';
@@ -27,6 +30,8 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     project,
+    videoProject,
+    page,
     mainImage,
     bodyPortableText,
     excerptPortableText,
