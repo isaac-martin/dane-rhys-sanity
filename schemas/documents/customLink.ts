@@ -10,7 +10,7 @@ export default {
       type: 'string',
     },
     {
-      name: 'slug',
+      name: 'url',
       title: 'Link',
       type: 'url',
     },

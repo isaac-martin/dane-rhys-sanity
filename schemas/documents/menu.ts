@@ -3,27 +3,26 @@ export default {
   type: 'document',
   title: 'Menu',
   fields: [
-    {
-      name: 'title',
-      title: 'Menu Name',
-      type: 'string',
-    },
+  {
+  type: `string`,
+  name: 'menuTitle',
+  title: 'Menu'
+  },
     {
       name: 'menuItems',
       title: 'Menu Items',
       type: 'array',
-      description: 'You can select a project, another menu (to build a submenu) or a custom link',
+      description: 'Build Submenus',
       of: [
         {
-          type: 'reference',
-          to: [{type: 'menu'}, {type: 'project'}, {type: 'customLink'}],
+          type: 'subMenu',
         },
       ],
     },
   ],
-  preview: {
+    preview: {
     select: {
-      title: 'title',
+      title: 'menuTitle',
     },
   },
 };

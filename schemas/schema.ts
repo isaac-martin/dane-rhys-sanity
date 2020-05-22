@@ -12,6 +12,8 @@ import page from './documents/page';
 import customLink from './documents/customLink';
 import siteSettings from './documents/siteSettings';
 import menu from './documents/menu';
+import subMenu from './objects/subMenu';
+
 // Object types
 import bodyPortableText from './objects/bodyPortableText';
 import excerptPortableText from './objects/excerptPortableText';
@@ -41,5 +43,6 @@ export default createSchema({
     menu,
     customLink,
     siteSettings,
+    subMenu
   ]),
 });
