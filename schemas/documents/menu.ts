@@ -3,11 +3,11 @@ export default {
   type: 'document',
   title: 'Menu',
   fields: [
-  {
-  type: `string`,
-  name: 'menuTitle',
-  title: 'Menu'
-  },
+    {
+      type: `string`,
+      name: 'menuTitle',
+      title: 'Menu',
+    },
     {
       name: 'menuItems',
       title: 'Menu Items',
@@ -19,8 +19,18 @@ export default {
         },
       ],
     },
+    {
+      name: 'homeImages',
+      title: 'Home Page Images',
+      type: 'array',
+      of: [
+        {
+          type: 'mainImage',
+        },
+      ],
+    },
   ],
-    preview: {
+  preview: {
     select: {
       title: 'menuTitle',
     },
