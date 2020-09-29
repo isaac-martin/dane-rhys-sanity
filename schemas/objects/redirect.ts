@@ -2,6 +2,7 @@ export default {
   name: 'redirectItem',
   type: 'object',
   title: 'Redirect',
+  description: "Urls should be paths eg /old-project not a full url eg danerhys.com/old-project",
   fields: [
    {
       name: 'from',
