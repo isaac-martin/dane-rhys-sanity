@@ -14,5 +14,11 @@ export default {
       type: 'socialSharing',
       title: 'Social Sharing + Google Data',
     },
+    {
+      name: 'redirects',
+      type: 'array',
+      title: 'Redirects',
+      of: [{type: 'redirectItem'}]
+    },
   ],
 };

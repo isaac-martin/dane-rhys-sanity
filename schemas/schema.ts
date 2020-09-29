@@ -21,6 +21,8 @@ import socialSharing from './objects/socialSharing';
 import mainImage from './objects/mainImage';
 import projectImage from './objects/projectImage';
 import imageGallery from './objects/imageGallery';
+import redirectItem from './objects/redirect';
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -43,6 +45,7 @@ export default createSchema({
     menu,
     customLink,
     siteSettings,
-    subMenu
+    subMenu,
+    redirectItem
   ]),
 });
