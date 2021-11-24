@@ -20,12 +20,12 @@ export default {
       ],
     },
     {
-      name: 'homeImages',
-      title: 'Home Page Images',
+      name: 'homeFeaturedItems',
+      title: 'Home Page Featured Items',
       type: 'array',
       of: [
         {
-          type: 'mainImage',
+          type: 'homeFeatured',
         },
       ],
     },
