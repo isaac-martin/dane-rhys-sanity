@@ -18,6 +18,11 @@ export default {
       },
     },
     {
+      name: 'projectIntro',
+      type: 'bodyPortableText',
+      title: 'Project Intro',
+    },
+    {
       name: 'projectDescription',
       type: 'bodyPortableText',
       title: 'Project Description',
