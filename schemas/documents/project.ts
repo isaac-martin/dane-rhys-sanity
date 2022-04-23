@@ -23,6 +23,12 @@ export default {
       title: 'Project Intro',
     },
     {
+      name: 'password',
+      type: 'string',
+      title: 'Password',
+      description: 'If empty page won\'t be password protected',
+    },
+    {
       name: 'projectDescription',
       type: 'bodyPortableText',
       title: 'Project Description',
