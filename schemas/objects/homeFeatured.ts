@@ -7,7 +7,7 @@ export default {
       name: 'project',
       title: 'Project',
       type: 'reference',
-      to: [{ type: 'project' }, { type: 'videoProject' }],
+      to: [{ type: 'project' }, { type: 'videoProject' }, { type: 'customLink' }],
       validation: Rule => Rule.required()
     },
     {
