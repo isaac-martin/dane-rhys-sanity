@@ -11,15 +11,15 @@ export default {
       // you want and decide how you want to deal with it where you want to
       // use your content.
       styles: [
-        {title: 'Normal', value: 'normal'},
-        {title: 'H1', value: 'h1'},
-        {title: 'H2', value: 'h2'},
-        {title: 'H3', value: 'h3'},
+        { title: 'Normal', value: 'normal' },
+        { title: 'H1', value: 'h1' },
+        { title: 'H2', value: 'h2' },
+        { title: 'H3', value: 'h3' },
       ],
-      lists: [{title: 'Bullet', value: 'bullet'}],
+      lists: [{ title: 'Bullet', value: 'bullet' }],
       // Marks let you mark up inline text in the block editor.
       marks: {
-        decorators: [{title: 'Strong', value: 'strong'}],
+        decorators: [{ title: 'Strong', value: 'strong' }],
         annotations: [
           {
             name: 'internalLink',
@@ -31,7 +31,7 @@ export default {
                 type: 'reference',
                 title: 'Reference',
                 to: [
-                  {type: 'project'},
+                  { type: 'project' },
                   // other types you may want to link to
                 ],
               },
@@ -57,6 +57,11 @@ export default {
           },
         ],
       },
+    },
+    {
+      name: 'image',
+      type: 'mainImage',
+      title: 'Image',
     },
   ],
 };
