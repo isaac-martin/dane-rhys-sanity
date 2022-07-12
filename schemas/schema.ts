@@ -12,6 +12,8 @@ import page from './documents/page';
 import customLink from './documents/customLink';
 import siteSettings from './documents/siteSettings';
 import menu from './documents/menu';
+import projectGroup from './documents/projectGroup';
+
 import subMenu from './objects/subMenu';
 
 // Object types
@@ -22,7 +24,7 @@ import mainImage from './objects/mainImage';
 import projectImage from './objects/projectImage';
 import imageGallery from './objects/imageGallery';
 import redirectItem from './objects/redirect';
-import homeFeatured from './objects/homeFeatured'
+import homeFeatured from './objects/homeFeatured';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -47,6 +49,7 @@ export default createSchema({
     siteSettings,
     subMenu,
     redirectItem,
-    homeFeatured
+    homeFeatured,
+    projectGroup,
   ]),
 });
