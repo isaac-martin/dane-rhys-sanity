@@ -1,8 +1,13 @@
+import {orderRankField, orderRankOrdering} from '@sanity/orderable-document-list';
+import * as React from 'react';
+
 export default {
   name: 'project',
   type: 'document',
   title: 'Project',
+  orderings: [orderRankOrdering],
   fields: [
+    orderRankField({type: 'project'}),
     {
       name: 'title',
       type: 'string',
@@ -13,13 +18,15 @@ export default {
       name: 'projGroup',
       type: 'reference',
       to: [{type: 'projectGroup'}],
+      validation: (Rule) => Rule.required(),
     },
     {
-      title: 'Order',
-      name: 'Order',
-      description: 'Used to order this project on the page. Numbers do not need to be sequential, and can be used multiple times',
-      type: 'number',
+      name: 'featuredImage',
+      type: 'mainImage',
+      title: 'Featured Image',
+      // validation: (Rule) => Rule.required(),
     },
+
     {
       name: 'slug',
       type: 'slug',
@@ -59,7 +66,16 @@ export default {
   preview: {
     select: {
       title: 'title',
-      slug: 'slug',
+      group: 'projGroup.title',
+      imgUrl: 'featuredImage.asset.url',
+    },
+    prepare(selection) {
+      const {title, group, imgUrl} = selection;
+      return {
+        title: title,
+        subtitle: `Group: ${group ? group : 'None'}`,
+        media: <img src={imgUrl} />,
+      };
     },
   },
 };
