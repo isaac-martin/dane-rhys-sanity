@@ -9,6 +9,12 @@ export default {
       title: 'Title',
     },
     {
+      title: 'Project Group',
+      name: 'projGroup',
+      type: 'reference',
+      to: [{type: 'projectGroup'}],
+    },
+    {
       name: 'order',
       type: 'number',
       title: 'Order',

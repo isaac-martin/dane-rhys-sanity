@@ -18,7 +18,6 @@ export default {
       name: 'projGroup',
       type: 'reference',
       to: [{type: 'projectGroup'}],
-      validation: (Rule) => Rule.required(),
     },
     {
       name: 'featuredImage',
