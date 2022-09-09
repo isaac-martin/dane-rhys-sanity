@@ -9,10 +9,17 @@ export default {
       title: 'Link Text',
       type: 'string',
     },
+
     {
       name: 'url',
       title: 'Link',
       type: 'url',
+    },
+    {
+      title: 'Project Group',
+      name: 'projGroup',
+      type: 'reference',
+      to: [{type: 'projectGroup'}],
     },
     {
       name: 'order',
