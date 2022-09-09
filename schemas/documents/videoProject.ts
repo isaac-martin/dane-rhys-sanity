@@ -9,6 +9,12 @@ export default {
       title: 'Title',
     },
     {
+      name: 'order',
+      type: 'number',
+      title: 'Order',
+      description: 'used to insert this project in this place',
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'URL Slug',
@@ -32,6 +38,7 @@ export default {
       name: 'thumbnail',
       type: 'mainImage',
       title: 'Thumbnail Image',
+      description: 'Used when shown in pages',
     },
     {
       name: 'socialSharing',

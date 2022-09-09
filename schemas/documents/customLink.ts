@@ -14,6 +14,18 @@ export default {
       title: 'Link',
       type: 'url',
     },
+    {
+      name: 'order',
+      type: 'number',
+      title: 'Order',
+      description: 'used to insert this link in the pages',
+    },
+    {
+      name: 'thumbnail',
+      type: 'mainImage',
+      title: 'Thumbnail Image',
+      description: 'Used when shown in pages',
+    },
   ],
   preview: {
     select: {
