@@ -24,7 +24,7 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{type: 'page'}, {type: 'project'}, {type: 'customLink'}, {type: 'videoProject'}],
+          to: [{type: 'page'}, {type: 'project'}, {type: 'customLink'}, {type: 'videoProject'}, {type: 'projectGroup'}],
         },
       ],
     },
