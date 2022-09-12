@@ -7,10 +7,20 @@
     "projectId": "ixzt230q",
     "dataset": "production"
   },
-  "plugins": ["@sanity/base", "@sanity/components", "@sanity/default-layout", "@sanity/default-login", "@sanity/desk-tool", "media"],
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "media",
+    "@indent-oss/sanityio-referenced-by"
+  ],
   "env": {
     "development": {
-      "plugins": ["@sanity/vision"]
+      "plugins": [
+        "@sanity/vision"
+      ]
     }
   },
   "parts": [
